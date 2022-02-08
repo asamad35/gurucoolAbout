@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const MyNav = () => {
   const [isPageActive, setPageActive] = useState("our-story");
+  const [expanded, setExpanded] = useState(false);
   return (
     <div className="myNavbar flex">
       {/* <div className="logo">
@@ -42,17 +43,22 @@ const MyNav = () => {
           Content
         </Link>
       </div> */}
-      <Navbar bg="white" variant="light" expand="lg">
+      <Navbar bg="white" variant="light" expand="lg" expanded={expanded}>
         <Navbar.Brand className="logo">
           <img src={logo} alt="" />
         </Navbar.Brand>
 
-        <Navbar.Toggle />
+        <Navbar.Toggle
+          onClick={() => setExpanded(expanded ? false : "expanded")}
+        />
         <Navbar.Collapse>
           <Nav className="navlinks flex">
             <Link
               to="/"
-              onClick={() => setPageActive("our-story")}
+              onClick={() => {
+                setPageActive("our-story");
+                setExpanded(false);
+              }}
               className={`navlink ${
                 isPageActive == "our-story" ? "active" : ""
               } `}
@@ -62,14 +68,20 @@ const MyNav = () => {
             <Link
               to={"people"}
               className={`navlink ${isPageActive == "people" ? "active" : ""} `}
-              onClick={() => setPageActive("people")}
+              onClick={() => {
+                setPageActive("people");
+                setExpanded(false);
+              }}
             >
               People
             </Link>
             <Link
               to={"tools"}
               className={`navlink ${isPageActive == "tools" ? "active" : ""} `}
-              onClick={() => setPageActive("tools")}
+              onClick={() => {
+                setPageActive("tools");
+                setExpanded(false);
+              }}
             >
               Tools
             </Link>
@@ -78,7 +90,10 @@ const MyNav = () => {
               className={`navlink ${
                 isPageActive == "content" ? "active" : ""
               } `}
-              onClick={() => setPageActive("content")}
+              onClick={() => {
+                setPageActive("content");
+                setExpanded(false);
+              }}
             >
               Content
             </Link>
