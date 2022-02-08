@@ -1,0 +1,65 @@
+.toolsLearnSection {
+  padding: 10rem;
+  h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    span {
+      color: #f9c933;
+    }
+  }
+  .learnCards {
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    .cardContainer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      .heading {
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 1rem 0 2rem;
+      }
+      .textPara {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 4rem;
+        color: #767676;
+      }
+      .link {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: #f9c933;
+        margin: auto 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .toolsLearnSection {
+    padding: 6rem !important;
+    h1 {
+      font-size: 3.2rem !important;
+    }
+    .learnCards {
+      flex-direction: column;
+      .card-img-top {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .toolsLearnSection {
+    padding: 3rem !important;
+    .learnCards {
+      flex-direction: column;
+    }
+  }
+}

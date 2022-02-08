@@ -1,0 +1,89 @@
+.myNavbar {
+  padding-left: 10rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid #e8eaed;
+  justify-content: flex-start;
+  gap: 8rem;
+
+  .logo {
+    width: 16rem;
+    padding-bottom: 0.8rem;
+    margin-right: 10rem;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+  .navlinks {
+    gap: 10rem;
+    align-self: flex-end;
+    .navlink {
+      // position: relative;
+      // top: 1px;
+      font-size: 2rem;
+      font-weight: 500;
+      padding-bottom: 1.4rem;
+      cursor: pointer;
+      border-bottom: 3px solid #fff;
+      text-decoration: none;
+      color: black;
+    }
+    .active {
+      border-bottom: 3px solid #f9c933;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .myNavbar {
+    padding: 0;
+    position: relative;
+    .logo {
+      margin-left: 4rem;
+    }
+    .navbar {
+      justify-content: space-between;
+      width: 100%;
+      padding-right: 6rem;
+    }
+    .navlinks {
+      z-index: 10;
+      background-color: white;
+      position: absolute;
+      top: 6.9rem;
+      left: 0rem;
+      width: 100vw;
+      gap: 2rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .navlink {
+        padding-left: 3rem;
+        text-align: start;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .myNavbar {
+    padding: 0rem;
+    .logo {
+      margin: 0rem;
+    }
+    .navbar {
+      padding-right: 3rem;
+    }
+    .navlinks {
+      z-index: 10;
+      background-color: white;
+      position: absolute;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .navlink {
+        padding-left: 3rem;
+        text-align: start;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.globalTeam {
+  padding: 10rem;
+  gap: 5rem;
+  .teamMember {
+    max-height: 50rem;
+    .text {
+      font-size: 3.2rem;
+      text-align: left;
+      padding-right: 2rem;
+      span {
+        color: #f9c933;
+      }
+    }
+    .imageContainer {
+      width: 100%;
+      height: 80%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+    .memberDetail {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 1rem;
+
+      .nameAndId {
+        justify-content: space-between;
+        width: 100%;
+        .name {
+          font-size: 2.8rem;
+          font-weight: 500;
+        }
+      }
+      .designation,
+      .company {
+        margin-bottom: 0rem;
+        font-size: 2rem;
+        font-weight: 300;
+        color: rgb(59, 58, 58);
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .globalTeam {
+    padding: 6rem;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    .teamMember.col-1 {
+      grid-column: 1/-1;
+      width: 100%;
+    }
+
+    .teamMember {
+      .text {
+        font-size: 3.2rem;
+        text-align: left;
+      }
+      .memberDetail {
+        padding-top: 1rem;
+
+        .nameAndId {
+          .name {
+            font-size: 2.2rem;
+            font-weight: 500;
+          }
+        }
+        .designation,
+        .company {
+          font-size: 1.6rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .globalTeam {
+    padding: 3rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    .teamMember {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}

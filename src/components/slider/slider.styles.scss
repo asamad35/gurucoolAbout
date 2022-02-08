@@ -1,0 +1,88 @@
+.sliderContainer {
+  padding: 10rem 10rem;
+
+  .sliderHeading {
+    font-size: 5.6rem;
+    padding-bottom: 2rem;
+  }
+
+  .slick-slider {
+    padding-bottom: 1rem;
+    .slick-dots {
+      button:before {
+        font-size: 1.2rem;
+        color: black;
+        opacity: 1;
+      }
+      .slick-active {
+        button:before {
+          color: #f9c933;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .groupContainer {
+    .groupHeading {
+      font-size: 3.2rem;
+      font-weight: 500;
+      padding-bottom: 2rem;
+    }
+    .groupImages {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .imageContainer {
+    padding: 0 1rem;
+    outline: none;
+    height: 100%;
+    img {
+      border-radius: 1rem;
+      width: 100%;
+      min-height: 36rem;
+      max-height: 36rem;
+
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .sliderContainer {
+    padding: 0rem 6rem;
+    padding-bottom: 5rem;
+
+    .sliderHeading {
+      font-size: 3rem;
+      padding-bottom: 3rem;
+    }
+    .slick-slider {
+      padding-bottom: 1rem;
+      .slick-dots {
+        li {
+          margin: 0;
+        }
+        button:before {
+          font-size: 1rem;
+          color: black;
+          opacity: 1;
+        }
+        .slick-active {
+          button:before {
+            color: #f9c933;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .sliderContainer {
+    padding: 0rem 3rem;
+    padding-bottom: 5rem;
+  }
+}

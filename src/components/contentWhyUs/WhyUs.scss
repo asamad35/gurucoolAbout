@@ -1,0 +1,65 @@
+.whyUs {
+  background: #f9c933;
+  padding: 0rem 10rem 5rem 10rem;
+  .imageContainer {
+    background: black;
+    padding: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100rem;
+    margin: auto;
+    transform: translateY(-45%);
+
+    img {
+      width: 100%;
+    }
+  }
+  .heading {
+    font-size: 3.2rem;
+    padding-bottom: 4rem;
+    span {
+      color: white;
+    }
+  }
+  .cardContainer {
+    justify-content: space-between;
+    .cardTitle {
+      font-size: 2.4rem;
+      font-weight: 500;
+      padding-bottom: 1rem;
+    }
+    .cardPara {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .whyUs {
+    padding: 0rem 6rem 5rem 6rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .whyUs {
+    .cardContainer {
+      flex-direction: column;
+      gap: 8rem;
+      .cardTitle {
+        font-size: 2.4rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+      }
+      .cardPara {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .whyUs {
+    padding: 0rem 3rem 5rem 3rem;
+  }
+}

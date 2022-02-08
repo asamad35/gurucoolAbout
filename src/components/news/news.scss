@@ -1,0 +1,36 @@
+.newsSection {
+  padding: 10rem;
+  h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+  }
+  .companyContainer {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    // grid-template-columns: repeat(9, 1fr);
+    gap: 5rem;
+    align-items: center;
+    .companyImg {
+      width: 10rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .newsSection {
+    padding: 5rem 6rem;
+    h1 {
+      font-size: 3.8rem;
+      font-weight: 500;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .newsSection {
+    padding: 0rem 3rem;
+  }
+}

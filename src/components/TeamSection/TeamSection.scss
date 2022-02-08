@@ -1,0 +1,71 @@
+.teamSection {
+  padding: 10rem;
+  max-width: 265rem;
+  .teamHeading {
+    font-size: 4.2rem;
+    font-weight: 600;
+    padding-bottom: 4.8rem;
+    span {
+      color: #f9c933;
+    }
+  }
+  .teamContainer {
+    display: grid;
+    gap: 15rem;
+    grid-template-columns: repeat(2, 1fr);
+    .textContainer {
+      h3 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        padding-bottom: 2.4rem;
+        text-align: left;
+      }
+      p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 2.4rem;
+      }
+    }
+    .imageContainer {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .teamSection {
+    padding: 6rem;
+    .teamContainer {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 4rem;
+      .textContainer {
+        h3,
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .teamSection {
+    padding: 3rem;
+    .teamContainer {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 4rem;
+      .textContainer {
+        h3 {
+          text-align: center;
+          font-size: 2.4rem;
+        }
+        p {
+          text-align: center;
+          font-size: 2.1rem;
+        }
+      }
+    }
+  }
+}

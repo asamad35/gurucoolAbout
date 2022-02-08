@@ -1,0 +1,65 @@
+.contentHero {
+  padding: 10rem;
+  align-items: center;
+  gap: 4rem;
+  .heading {
+    font-size: 4.8rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.2;
+
+    span {
+      color: #f9c933;
+      font-size: 6.4rem;
+      font-weight: 700;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .para {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .textContainer {
+    flex-direction: column;
+    align-items: flex-start;
+
+    button {
+      padding: 1rem 4rem;
+      font-size: 2rem;
+      background: #f9c933;
+      color: black;
+      font-weight: 500;
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .contentHero {
+    padding: 6rem;
+  }
+}
+@media (max-width: 800px) {
+  .contentHero {
+    grid-template-columns: 1fr;
+    padding-bottom: 10rem;
+    .heading {
+      font-size: 3.6rem;
+    }
+    .imageContainer {
+      max-width: 30rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contentHero {
+    padding: 3rem;
+    padding-bottom: 10rem;
+  }
+}

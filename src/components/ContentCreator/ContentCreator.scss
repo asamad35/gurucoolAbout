@@ -1,0 +1,57 @@
+.contentCreator {
+  padding: 10rem;
+  .container {
+    background-image: url("../../assests/images/become-teacher.jpg");
+    background-size: cover;
+    border-radius: 6rem;
+    height: 80vh;
+    color: white;
+    align-items: flex-start;
+    padding: 4rem;
+  }
+  .heading {
+    font-size: 5.6rem;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+  .text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  button {
+    padding: 1rem 6rem;
+    background: #f9c933;
+    color: black;
+    border: none;
+    font-size: 2rem;
+    font-weight: 500;
+    &:hover {
+      background-color: #f9c933;
+      color: black;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .contentCreator {
+    padding: 6rem;
+    .heading {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contentCreator {
+    padding: 3rem;
+    .heading {
+      font-size: 3.2rem;
+    }
+    button {
+      padding: 1rem 2rem;
+    }
+  }
+}

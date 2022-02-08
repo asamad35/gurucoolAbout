@@ -1,0 +1,39 @@
+.posts {
+  padding: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 22rem;
+  row-gap: 6rem;
+  .post {
+    h1 {
+      font-weight: 400;
+      font-size: 2.7rem;
+      text-align: left;
+      padding-bottom: 1rem;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      border: 1px solid #e8eaed;
+      padding: 2px 5px;
+      border-radius: 5px;
+      vertical-align: middle;
+    }
+    img {
+      border-radius: 6px;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    small {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .posts {
+    padding: 6rem;
+    grid-template-columns: 1fr;
+  }
+}

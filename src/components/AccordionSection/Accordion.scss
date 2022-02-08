@@ -1,0 +1,47 @@
+.accordionSection {
+  padding: 0rem 10rem 5rem 10rem;
+
+  .accordionHeading {
+    button {
+      font-size: 1.6rem;
+      &::after {
+        background-size: 2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+
+  .accordionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+
+    .accordionItemContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem 0;
+      h2 {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+      img {
+        max-width: 8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .accordionSection {
+    padding: 0rem 6rem 5rem 6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .accordionSection {
+    padding: 0rem 3rem 3rem 3rem;
+  }
+}
